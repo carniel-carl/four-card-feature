@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    /* ### Primary Colour */
+
+    --RED: hsl(0, 78%, 62%);
+    --CYAN: hsl(180, 62%, 55%);
+    --ORANGE: hsl(34, 97%, 64%);
+    --BLUE: hsl(212, 86%, 64%);
+
+    /* ### Neutral Colour */
+
+    --VERY-DARK-BLUE: hsl(234, 12%, 34%);
+    --GRAYISH-BLUE: hsl(229, 6%, 66%);
+    --LIGHT-GRAY: hsl(0, 0%, 98%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    color: var(--VERY-DARK-BLUE);
+    background-color: var(--LIGHT-GRAY);
+}
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 1.5rem;
+    
+}
+
+h1 {
+    margin: .5rem 0;
+}
+
+h2 {
+    color: var(--GRAYISH-BLUE);
+    font-size: 2rem;
+    font-weight: 200;
+    
+}
+
+h3 {
+    margin-bottom: 0.8rem;
+   
+}
+
+
+p {
+    font-size: .9rem;
+    font-weight: 200;
+    color: var(--GRAYISH-BLUE);
+    line-height: 1.7;
+}
+
+.header {
+    max-width: 28rem;
+    height: auto;
+    text-align: center; 
+    margin-bottom: 3.2rem;
+}
+
+.all-cards {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8rem;   
+    
+}
+
+.middle-card {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8rem;
+}
+
+.card {
+    max-width: 22rem;
+    padding: 2rem;
+    box-shadow: 3px 8px 20px hsla(229, 6%, 66%, 40%);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card-image {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: right;
+}
+
+figure {
+    max-width: 3rem;
+    max-height: 3rem; 
+}
+
+figure img {
+    width: 100%;
+    display: block;
+}
+
+.supervisor-card {
+    border-top: .3rem solid var(--CYAN);
+}
+.team-card {
+    border-top: .3rem solid var(--RED);
+}
+.karma-card {
+    border-top: .3rem solid var(--ORANGE);
+}
+.calculator-card {
+    border-top: .3rem solid var(--BLUE);
+}
+
+
+
+@media  screen and (max-width: 450px) {
+
+    .container {
+        margin: 3.5rem 1.5rem;
+    }
+
+    .all-cards {
+        flex-wrap: wrap;
+    }
+
+    h1, h2 {
+        font-size: 1.7rem;
+    }
+}
